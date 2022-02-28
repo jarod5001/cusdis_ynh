@@ -6,23 +6,23 @@
         "en": "Lightweight, privacy-friendly alternative to Disqus",
         "fr": "Alternative légère et respectueuse de la vie privée à Disqus"
     },
-    "version": "1.2.1~ynh1",
+    "version": "1.3.2~ynh1",
     "url": "https://cusdis.com/",
     "upstream": {
-        "license": "free",
+        "license": "GPL-3.0-only",
         "website": "https://cusdis.com/",
         "demo": "https://demo.example.com",
         "admindoc": "https://yunohost.org/packaging_apps",
         "userdoc": "https://yunohost.org/apps",
         "code": "https://github.com/djyde/cusdis"
     },
-    "license": "free",
+    "license": "GPL-3.0-only",
     "maintainer": {
         "name": "",
         "email": ""
     },
     "requirements": {
-        "yunohost": ">= 4.2.4"
+        "yunohost": ">= 4.3.0"
     },
     "multi_instance": true,
     "services": [
@@ -52,11 +52,7 @@
             },
             {
                 "name": "password",
-                "type": "password",
-                "help": {
-                    "en": "Use the help field to add an information for the admin about this question.",
-                    "fr": "Utilisez le champ aide pour ajouter une information à l'intention de l'administrateur à propos de cette question."
-                }
+                "type": "password"
             }
         ]
     }

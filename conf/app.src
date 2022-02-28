@@ -1,7 +1,6 @@
-SOURCE_URL=https://github.com/djyde/cusdis/archive/refs/tags/v1.2.1.tar.gz
-SOURCE_SUM=6540ea9521055596c4f9d97929ba706defc3bb4e3031e04556740be91e62cb0e
+SOURCE_URL=https://github.com/djyde/cusdis/archive/refs/tags/v1.3.2.tar.gz
+SOURCE_SUM=f480f4dbbc0bb320a505a02248738d4c4ce44129af5227b2b5a9b05629bdb09e
 SOURCE_SUM_PRG=sha256sum
 SOURCE_FORMAT=tar.gz
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
 SOURCE_EXTRACT=true
