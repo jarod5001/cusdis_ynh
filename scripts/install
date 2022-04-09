@@ -108,6 +108,12 @@ chmod 750 "$final_path"
 chmod -R o-rwx "$final_path"
 chown -R $app:www-data "$final_path"
 
+ynh_script_progression --message="Fix package.json..." --time --weight=1
+# Fix package.json
+ynh_replace_string --match_string="npm run db:generate && next build && npm run build:widget" --replace_string="DB_TYPE=sqlite npm run db:generate && next build && npm run build:widget" --target_file="$final_path/package.json"
+ynh_replace_string --match_string="npm run db:generate && npm run db:deploy && next start -p 3000" --replace_string="DB_TYPE=sqlite npm run db:generate && DB_TYPE=sqlite npm run db:deploy && next start -p 3000" --target_file="$final_path/package.json"
+
+
 #=================================================
 # NGINX CONFIGURATION
 #=================================================
