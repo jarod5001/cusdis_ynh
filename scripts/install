@@ -133,7 +133,7 @@ chmod 400 "$final_path/.env"
 chown $app:$app "$final_path/.env"
 
 # Add prisma sqlite schema
-ynh_add_config --template="prisma/sqlite/schema.prisma" --destination="$final_path/prisma/sqlite/schema.prisma"
+# ynh_add_config --template="prisma/sqlite/schema.prisma" --destination="$final_path/prisma/sqlite/schema.prisma"
 
 #==============================================
 # INSTALL HEDGEDOC
