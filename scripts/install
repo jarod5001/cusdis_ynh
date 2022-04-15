@@ -78,7 +78,7 @@ ynh_install_extra_app_dependencies --repo="deb https://dl.yarnpkg.com/debian/ st
 
 # Install prisma
 ynh_use_nodejs
-ynh_npm install -g prisma
+ynh_npm install prisma --save-dev
 
 #=================================================
 # CREATE DEDICATED USER
@@ -91,7 +91,7 @@ ynh_system_user_create --username=$app --home_dir="$final_path"
 #=================================================
 # CREATE A MYSQL DATABASE
 #=================================================
-ynh_script_progression --message="Creating a PostgreSQL database..." --weight=2
+# ynh_script_progression --message="Creating a PostgreSQL database..." --weight=2
 
 # db_name=$(ynh_sanitize_dbid --db_name=$app)
 # db_user=$db_name
